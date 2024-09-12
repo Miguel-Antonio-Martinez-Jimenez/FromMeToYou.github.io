@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to right, #f7b42c, #fc575e);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.card {
+    margin-bottom: 30px; /* Aumenta el espacio entre tarjetas */
+    border-radius: 10px; /* Opcional: redondear bordes de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: añadir sombra a las tarjetas */
+    background-color: #333; /* Fondo oscuro para las tarjetas */
+    color: #fff; /* Color del texto en blanco */
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+/* Estilos para el anuncio */
+.announcement {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(23, 162, 184, 0); /* Color de fondo del anuncio */
+    color: #fff; /* Color del texto */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: blink 1s infinite, move 10s linear infinite;
+}
+
+/* Animación para el parpadeo del texto */
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+/* Animación para el movimiento de derecha a izquierda */
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

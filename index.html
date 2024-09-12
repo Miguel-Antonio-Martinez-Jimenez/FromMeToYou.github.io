@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Motivacionales</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <!-- Tarjetas existentes -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Eres increíble!</h5>
+                        <p class="card-text">Siempre cree en ti mismo y en tus capacidades.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Eres una inspiración para todos!')">
+                            <i class="bi bi-heart"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Sigue adelante!</h5>
+                        <p class="card-text">Cada paso que das te acerca más a tus sueños.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Tus esfuerzos valen la pena!')">
+                            <i class="bi bi-star"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Nunca te rindas!</h5>
+                        <p class="card-text">Los desafíos son oportunidades para crecer.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Tienes un gran potencial!')">
+                            <i class="bi bi-trophy"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuevas tarjetas -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Eres valiente!</h5>
+                        <p class="card-text">La valentía no es la ausencia de miedo, sino la determinación de seguir adelante a pesar del miedo.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Tu valentía es admirable!')">
+                            <i class="bi bi-shield"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Cree en ti!</h5>
+                        <p class="card-text">Tu potencial es ilimitado si crees en ti mismo.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡La confianza en ti mismo es tu mayor fuerza!')">
+                            <i class="bi bi-lightbulb"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Hazlo ahora!</h5>
+                        <p class="card-text">El mejor momento para empezar es ahora. No esperes a mañana.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡El momento es ahora, actúa con valentía!')">
+                            <i class="bi bi-calendar-check"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Tú haces la diferencia!</h5>
+                        <p class="card-text">Cada acción cuenta. Tú tienes el poder de hacer el cambio.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Tu impacto es significativo y positivo!')">
+                            <i class="bi bi-person-check"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Sigue soñando!</h5>
+                        <p class="card-text">Los sueños te dan dirección y propósito. Nunca dejes de soñar.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Tus sueños son el primer paso hacia tus logros!')">
+                            <i class="bi bi-cloud-sun"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">¡Eres suficiente!</h5>
+                        <p class="card-text">No necesitas ser más para ser valioso. Eres suficiente tal como eres.</p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('¡Tu valor no depende de nada más que de ti mismo!')">
+                            <i class="bi bi-people"></i> Motivación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta Especial -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card text-center border-primary">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">¿Necesitas hablar con alguien?</h5>
+                        <p class="card-text">Si en algún momento necesitas hablar con alguien o simplemente necesitas un apoyo, no dudes en mandarme un mensaje.</p>
+                        <p class="card-text font-weight-bold">Número de Teléfono: <a href="tel:+52 9982237663">+52 998 223 7663</a></p>
+                        <button class="btn btn-primary" onclick="showSweetAlert('Estoy aquí para escucharte. No estás solo. Te Amo Mucho')">
+                            <i class="bi bi-chat-dots"></i> Contáctame
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid text-center">
+        <div class="announcement">
+            <strong>Te Amo Demasiado :3</strong>
+        </div>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
